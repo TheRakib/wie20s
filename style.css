@@ -35,8 +35,13 @@
     inline-block element: 
     då element är inline eller har radbrytning och height och width kan implementeras där.
 
-    img??? varför fungerar height och width? 
+    img??? varför fungerar height och width? svar: det är en inline-block
+     
+    
+    ** px, rem, em, vh, vw
 
+
+    html doc font size == 16px == 1rem
 
 span{
     display: inline-block;
@@ -45,34 +50,72 @@ span{
     width: 300px;
  }
     
-återkommer: 9.35
+
    
 
 cmd: cd   , cd .. , 
 
-** px, rem, em, vh, vw
+
 
 
  git initialize: git init
 
- git status : 
+ git status : vilka ändringar som har hänt 
 
+ git add: vilka filer ni vill git ska spara  : git add .
+
+ sparar: git commit -m "skriver man vettig meddelandet om ändringar , name"
+
+
+
+ molntjänst : github , gitbucket 
+
+
+
+
+ https://caniuse.com/ // för att kunna se om egenskaperna är godkända av browser
+ 
+ css position: 
+     static : default
+     relative : med hjälp av top bottom left right kan man flytta 
+               element från sin plats
+     absolute : samma som relative positionering 
+                 men  
+     
+                när den flyttar lämnar sin gammal plats
+                parents ska ha relative positionering
+                annars följer den html body element 
+     fixed    : 
+     --
+     sticky: fixed och relative
+ 
+ 
+ 
+ 
+ 
  */
 
  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 
+ }
+
+ html {
+     font-size: 16px;
  }
 
  nav{
-     padding: 20px;
+     padding: 1.25rem;
      background: grey;
-     height: 40px;
+     height: 2.5rem;
+     
  }
 
  ul {
+    
      text-align: center;
  }
  main{
@@ -108,3 +151,32 @@ cmd: cd   , cd .. ,
  a:visited {
         color:red;
  }
+
+
+ section {
+    position: relative;
+    height: 800px;
+    width: 800px;
+    border: 2px solid red;
+ }
+
+ .article {
+     height: 200px;
+     width: 200px;
+ }
+
+ #article14{
+     background: indianred;
+     position: absolute;
+     left:200px;
+     top:200px;
+ }
+
+ #article24{
+    background: blue;
+}
+#article34{
+    background: plum;
+}#article44{
+    background: goldenrod;
+}
