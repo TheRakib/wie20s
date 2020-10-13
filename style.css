@@ -1,0 +1,110 @@
+ /* css selector: 
+
+    tagname { egenskap: värde; }  // 1 
+
+    .classname { egenskap: värde;  }  // 10
+
+    #idnamn {  egenskap: värde;  } // 100
+
+   
+    När det är css konflict: 
+    p { color: black;}
+
+    .p-class { color: green; }
+
+    #p-id { color: hotpink;}
+   
+
+    * : selector // välja allt 
+
+
+    nav background
+    nav ska en height 
+    punkterna ska borta 
+    de ska visas i samma rad 
+
+
+    om boxmodell: 
+
+    block element:  margin, padding, height och width
+
+    inline element: 
+    height och width gäller inte för inline element. 
+
+
+    inline-block element: 
+    då element är inline eller har radbrytning och height och width kan implementeras där.
+
+    img??? varför fungerar height och width? 
+
+
+span{
+    display: inline-block;
+    background: red;
+    height: 300px;
+    width: 300px;
+ }
+    
+återkommer: 9.35
+   
+
+cmd: cd   , cd .. , 
+
+** px, rem, em, vh, vw
+
+
+ git initialize: git init
+
+ git status : 
+
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+ }
+
+ nav{
+     padding: 20px;
+     background: grey;
+     height: 40px;
+ }
+
+ ul {
+     text-align: center;
+ }
+ main{
+    
+ }
+
+ li{ 
+     display: inline;
+     margin-right: 30px;
+
+ }
+
+ 
+ a {
+     text-decoration: none;
+ }
+
+ 
+ a:link {
+     color: rebeccapurple;
+
+ }
+ 
+ a:active {
+
+    color:plum;
+ }
+ a:hover {
+     color:green;
+      
+
+ }
+ a:visited {
+        color:red;
+ }
