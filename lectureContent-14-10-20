@@ -1,0 +1,57 @@
+
+Upprepa: boxmodell , css position 
+ 
+ Tema/punkter:       
+       flexbox,
+       advanced selector 
+       font 
+
+
+
+boxmodell: 
+block : margin, padding, height, width , border 
+inline : margin, padding, border 
+inline-block: margin, padding, height, width , border  också inline (ingen radbrytning)
+
+span 
+    display: inline-block;
+
+--------------
+
+Position: static, relative , absolute , fixed .     ( sticky ) 
+  
+    relative: 
+          position:relative;
+          left:30px;
+          left, right , top, bottom  
+
+          * behåller sin gammalt plats. 
+    absolute: 
+           position:absolute;
+           left:30px;
+
+ parents:  position:relative;
+           
+           * lämnar sin plats
+           * parent element måste ha relative position
+
+
+Flexbox: 
+    För att ge one dimentional layout 
+
+ 
+
+
+container /parent element > flex items
+
+container -> 
+
+display: flex , flex-direction, justify-content, align-items, align-content, flex-wrap
+
+
+flex items: order, flex-shrink, flex-basis, flex, align-self
+
+
+
+
+

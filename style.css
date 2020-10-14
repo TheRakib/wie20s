@@ -180,3 +180,122 @@ cmd: cd   , cd .. ,
 }#article44{
     background: goldenrod;
 }
+
+
+
+header{
+
+    background: linear-gradient(to right bottom,rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0.2))    , url("bilder/headerPic.jpg");
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; 
+   
+}
+
+.header-h1, .header-button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    
+}
+
+/* tagname.Classname */
+div.testing-Selector {
+ background-color: red;
+
+}
+
+/* tagname > child elemenet  */
+
+div.testing-Selector>div {
+   border:2px solid green;
+}
+
+
+.color-test {
+    color: green;
+
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.span-color-test {
+    color:red;
+}
+
+.header-h1 {
+   
+    top:50%;
+    left:50%; 
+    color:red;
+    
+
+}
+.header-button {
+    
+    top:60%;
+    left:50%; 
+    color:blue;
+    
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 20px 20px;
+    box-shadow: grey;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flex-container {
+    height: 800px;
+    border: 2px solid red;
+    display: flex;
+
+    justify-content: space-between ;
+    
+
+}
+/* använd align-items, justify-content för att flytta flex items i center  */
+
+/* ***** container egenskaper  ***** */
+/* justify-content:flex-start, flex-end, center, space-around, space-between, space-evenly */ 
+
+/* align-items: flex-start, center, flex-end */
+
+/* flex-direction */
+
+
+/* ***** container egenskaper  ***** */
+
+
+/*   ***items egenskaper  ***  */
+
+
+/*  order  , align-self */
+.flex-items {
+    background-color: hotpink;
+    height: 50px;
+    width: 50px;
+     
+}
+
+
+.i-4 {
+
+   
+}
+
+.i-1{
+    order:1;
+}
