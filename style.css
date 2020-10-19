@@ -92,7 +92,15 @@ cmd: cd   , cd .. ,
  
  
  
+    varje device:  16px font-size 
+
+     1rem = device font-size  //16px 
+
+     1rem == 16px
  
+
+
+
  */
 
  * {
@@ -114,74 +122,44 @@ cmd: cd   , cd .. ,
      
  }
 
- ul {
-    
-     text-align: center;
- }
- main{
-    
- }
-
- li{ 
-     display: inline;
-     margin-right: 30px;
-
- }
-
- 
- a {
-     text-decoration: none;
- }
-
- 
- a:link {
-     color: rebeccapurple;
-
- }
- 
- a:active {
-
-    color:plum;
- }
- a:hover {
-     color:green;
-      
-
- }
- a:visited {
-        color:red;
- }
 
 
- section {
-    position: relative;
-    height: 800px;
-    width: 800px;
-    border: 2px solid red;
- }
 
- .article {
-     height: 200px;
-     width: 200px;
- }
-
- #article14{
-     background: indianred;
+ .nav-li {
      position: absolute;
-     left:200px;
-     top:200px;
+     
+    
  }
 
- #article24{
-    background: blue;
-}
-#article34{
-    background: plum;
-}#article44{
-    background: goldenrod;
-}
+ .li-about {
+     left:80%;
+
+ }
+
+ .li-contact{
+     left:85%;
+ }
+
+ .li-blogg{
+     left:90%;
+ }
 
 
+ .li-home {
+
+    position: absolute;
+    left: 0;
+ }
+
+
+
+
+
+ 
+
+
+
+ /* header /landingpage design */
 
 header{
 
@@ -191,6 +169,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative; 
+    z-index: -1;
    
 }
 
@@ -198,29 +177,6 @@ header{
     position: absolute;
     transform: translate(-50%, -50%);
     
-}
-
-/* tagname.Classname */
-div.testing-Selector {
- background-color: red;
-
-}
-
-/* tagname > child elemenet  */
-
-div.testing-Selector>div {
-   border:2px solid green;
-}
-
-
-.color-test {
-    color: green;
-
-    font-family: 'Sansita Swashed', cursive;
-}
-
-.span-color-test {
-    color:red;
 }
 
 .header-h1 {
@@ -236,7 +192,6 @@ div.testing-Selector>div {
     top:60%;
     left:50%; 
     color:blue;
-    
     height: 2.5rem;
     width: 8rem;
     border-radius: 20px 20px;
@@ -246,26 +201,63 @@ div.testing-Selector>div {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-.flex-container {
-    height: 800px;
-    border: 2px solid red;
+.flex-card-container {
+ 
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
 
-    justify-content: space-between ;
-    
+ }
 
-}
+ .card-img {
+    height: 10rem;
+    width:10rem ;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+ }
+
+ .card-p {
+     width:10rem ;
+ }
+
+
+ article {
+     border:2px solid gray;
+     border-radius: 10px 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+
+
+/*
+ figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }  */
+
+ li{ 
+     display: inline;
+     margin-right: 30px;
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* använd align-items, justify-content för att flytta flex items i center  */
 
 /* ***** container egenskaper  ***** */
@@ -283,19 +275,3 @@ div.testing-Selector>div {
 
 
 /*  order  , align-self */
-.flex-items {
-    background-color: hotpink;
-    height: 50px;
-    width: 50px;
-     
-}
-
-
-.i-4 {
-
-   
-}
-
-.i-1{
-    order:1;
-}
