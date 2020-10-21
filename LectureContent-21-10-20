@@ -1,0 +1,58 @@
+
+Animation: Card 
+
+ ** återkommer 9.30
+   Fontawesome: Footer 
+   **css selector class 
+
+
+
+
+Rast tills : 10.30 
+
+Nodejs: Installation
+Steg1: ladda ner node js och installera.
+Steg 2: Starta om VS code och öppna terminalen
+Steg 3: Gå till terminalen och skriv :node -v
+   Ni borde se node versionen. 
+
+npm : node package manager 
+    : package - node-sass 
+    
+SASS:  variaber,       
+ skriver scss -> tolkare/node-sass ->css -> länkas till html
+ :preprocessor -> tolka -> css
+
+Steg 4: i terminalen: npm init -y
+Steg 5: i terminalen: npm install node-sass
+
+steg 6: Gå in till package.json filen och istället för
+      "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },  
+
+Skriv : 
+
+"scripts": {
+    "start": "node-sass sass/main.scss style.css -w"
+  },
+
+
+Steg 7: Skapa en mapp med namnet sass och en fil inuti 
+    mappen med namnet main.scss
+
+
+Steg 8: Kopiera/klistra ut allt från style.css filen
+  och paste in main.scss
+
+
+
+Steg 9: gå in i terminalen : npm start  
+       //kolla om du är i root mappen  när du skriver kommandona 
+
+
+Scss/Sass: Installation 
+SCSS övning
+
+----------------
+

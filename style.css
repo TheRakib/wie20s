@@ -1,236 +1,82 @@
- /* css selector: 
-
-    tagname { egenskap: värde; }  // 1 
-
-    .classname { egenskap: värde;  }  // 10
-
-    #idnamn {  egenskap: värde;  } // 100
-
-   
-    När det är css konflict: 
-    p { color: black;}
-
-    .p-class { color: green; }
-
-    #p-id { color: hotpink;}
-   
-
-    * : selector // välja allt 
-
-
-    nav background
-    nav ska en height 
-    punkterna ska borta 
-    de ska visas i samma rad 
-
-
-    om boxmodell: 
-
-    block element:  margin, padding, height och width
-
-    inline element: 
-    height och width gäller inte för inline element. 
-
-
-    inline-block element: 
-    då element är inline eller har radbrytning och height och width kan implementeras där.
-
-    img??? varför fungerar height och width? svar: det är en inline-block
-     
-    
-    ** px, rem, em, vh, vw
-
-
-    html doc font size == 16px == 1rem
-
-span{
-    display: inline-block;
-    background: red;
-    height: 300px;
-    width: 300px;
- }
-    
-
-   
-
-cmd: cd   , cd .. , 
-
-
-
-
- git initialize: git init
-
- git status : vilka ändringar som har hänt 
-
- git add: vilka filer ni vill git ska spara  : git add .
-
- sparar: git commit -m "skriver man vettig meddelandet om ändringar , name"
-
-
-
- molntjänst : github , gitbucket 
-
-
-
-
- https://caniuse.com/ // för att kunna se om egenskaperna är godkända av browser
- 
- css position: 
-     static : default
-     relative : med hjälp av top bottom left right kan man flytta 
-               element från sin plats
-     absolute : samma som relative positionering 
-                 men  
-     
-                när den flyttar lämnar sin gammal plats
-                parents ska ha relative positionering
-                annars följer den html body element 
-     fixed    : 
-     --
-     sticky: fixed och relative
- 
- 
- 
- 
-    varje device:  16px font-size 
-
-     1rem = device font-size  //16px 
-
-     1rem == 16px
- 
-
-
-
- */
-
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-
- }
-
- html {
-     font-size: 16px;
- }
-
- nav{
-     padding: 1.25rem;
-     background: grey;
-     height: 2.5rem;
-     
- }
-
-
-
-
- .nav-li {
-     position: absolute;
-     
-    
- }
-
- .li-about {
-     left:80%;
-
- }
-
- .li-contact{
-     left:85%;
- }
-
- .li-blogg{
-     left:90%;
- }
-
-
- .li-home {
-
-    position: absolute;
-    left: 0;
- }
-
-
-
-
-
- 
-
-
-
- /* header /landingpage design */
-
-header{
-
-    background: linear-gradient(to right bottom,rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0.2))    , url("bilder/headerPic.jpg");
-    height: 60vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative; 
-    z-index: -1;
-   
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px; }
+
+nav {
+  padding: 1.25rem;
+  background: #c6538c;
+  height: 2.5rem; }
+
+.nav-li {
+  position: absolute; }
+
+.li-about {
+  left: 80%; }
+
+.li-contact {
+  left: 85%; }
+
+.li-blogg {
+  left: 90%; }
+
+.li-home {
+  position: absolute;
+  left: 0; }
+
+header {
+  background: linear-gradient(to right bottom, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0.2)), url("bilder/headerPic.jpg");
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1; }
 
 .header-h1, .header-button {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    
-}
+  position: absolute;
+  transform: translate(-50%, -50%); }
 
 .header-h1 {
-   
-    top:50%;
-    left:50%; 
-    color:red;
-    
+  top: 50%;
+  left: 50%;
+  color: red; }
 
-}
 .header-button {
-    
-    top:60%;
-    left:50%; 
-    color:blue;
-    height: 2.5rem;
-    width: 8rem;
-    border-radius: 20px 20px;
-    box-shadow: grey;
-    
-}
-
-
+  top: 60%;
+  left: 50%;
+  color: blue;
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 20px 20px;
+  box-shadow: grey; }
 
 .flex-card-container {
- 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
- }
+.card-img {
+  height: 10rem;
+  width: 10rem;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%); }
 
- .card-img {
-    height: 10rem;
-    width:10rem ;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
- }
+.card-p {
+  width: 10rem; }
 
- .card-p {
-     width:10rem ;
- }
+article {
+  border: 2px solid gray;
+  border-radius: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
 
-
- article {
-     border:2px solid gray;
-     border-radius: 10px 10px;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-around;
-     align-items: center;
- }
-
-
+article > button {
+  align-self: flex-end; }
 
 /*
  figure {
@@ -239,39 +85,47 @@ header{
     justify-content: center;
     align-items: center;
  }  */
+li {
+  display: inline;
+  margin-right: 30px; }
 
- li{ 
-     display: inline;
-     margin-right: 30px;
+.card-img:hover {
+  /* animation: name duration timing-function delay iteration-count */
+  animation: imageAnim 2s ease-in 1s infinite;
+  /*  transform: scale(1.5, 1.5);  */
+  /*transform: rotate(300deg); */
+  /* transform: translate(200px, -300px); */ }
 
- }
+/*  keyframes */
+/* 2sec  */
+@keyframes imageAnim {
+  0% {
+    transform: translate(100px, 100px); }
+  12% {
+    transform: rotate(180deg); }
+  50% {
+    opacity: 0; }
+  60% {
+    opacity: .5; }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0); } }
 
+.footer {
+  margin-top: 1rem;
+  box-shadow: 1rem 1rem grey;
+  background-color: #c6538c;
+  height: 10rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
 
+.footer-nav-li {
+  display: flex;
+  flex-direction: column; }
 
-
-
-
-
-
-
-
-
-
-
-/* använd align-items, justify-content för att flytta flex items i center  */
-
-/* ***** container egenskaper  ***** */
-/* justify-content:flex-start, flex-end, center, space-around, space-between, space-evenly */ 
-
-/* align-items: flex-start, center, flex-end */
-
-/* flex-direction */
-
-
-/* ***** container egenskaper  ***** */
-
-
-/*   ***items egenskaper  ***  */
-
-
-/*  order  , align-self */
+.footer-nav-li > a {
+  text-decoration: none; }

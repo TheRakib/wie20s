@@ -1,0 +1,27 @@
+nav{
+    padding: 1.25rem;
+    background: $base-color;
+    height: 2.5rem;   
+}
+
+.nav-li {
+    position: absolute;  
+}
+
+.li-about {
+    left:80%;
+
+}
+
+.li-contact{
+    left:85%;
+}
+
+.li-blogg{
+    left:90%;
+}
+
+.li-home {
+   position: absolute;
+   left: 0;
+}
