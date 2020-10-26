@@ -1,9 +1,9 @@
 
 Animation: Card 
 
- ** återkommer 9.30
+** återkommer 9.30
    Fontawesome: Footer 
-   **css selector class 
+** css selector class 
 
 
 
@@ -23,6 +23,8 @@ SASS:  variaber,
  skriver scss -> tolkare/node-sass ->css -> länkas till html
  :preprocessor -> tolka -> css
 
+
+Upprepa på varje projekt:
 Steg 4: i terminalen: npm init -y
 Steg 5: i terminalen: npm install node-sass
 
@@ -42,15 +44,20 @@ Steg 7: Skapa en mapp med namnet sass och en fil inuti
     mappen med namnet main.scss
 
 
-Steg 8: Kopiera/klistra ut allt från style.css filen
-  och paste in main.scss
-
+Steg 8: Dela upp html i olika små componenter till ex.
+ nav, card, header, 
+footer , variabler, global osv. 
 
 
 Steg 9: gå in i terminalen : npm start  
        //kolla om du är i root mappen  när du skriver kommandona 
 
 
+
+
+Om du har gjort hela processen en gång kan du enkelt : 
+ ** kopiera package.json filen och ändra namnet
+ * i terminalen skriv :  npm install 
 Scss/Sass: Installation 
 SCSS övning
 

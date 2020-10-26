@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -6,26 +7,45 @@
 html {
   font-size: 16px; }
 
-nav {
+#toggle {
+  display: none; }
+
+.hamburger {
+  display: none; }
+
+.navbar {
   padding: 1.25rem;
   background: #c6538c;
   height: 2.5rem; }
 
-.nav-li {
-  position: absolute; }
+.navbar--menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
 
-.li-about {
-  left: 80%; }
+.navbar--menu > a {
+  text-decoration: none;
+  font-size: 20px; }
 
-.li-contact {
-  left: 85%; }
-
-.li-blogg {
-  left: 90%; }
-
-.li-home {
-  position: absolute;
-  left: 0; }
+@media (max-width: 500px) {
+  .hamburger {
+    display: block; }
+  .navbar--menu {
+    display: none; }
+  #toggle:checked + .navbar--menu {
+    display: block;
+    background-color: orange;
+    padding-bottom: 5px; }
+  #toggle:checked + .navbar--menu::before {
+    content: " 😺  🍔  ⚓  ";
+    display: block;
+    background-color: orange;
+    padding-bottom: 5px; }
+  .navbar--menu > a {
+    display: block;
+    color: wheat;
+    margin: 20px;
+    border-bottom: 1.5px solid black; } }
 
 header {
   background: linear-gradient(to right bottom, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0.2)), url("bilder/headerPic.jpg");
@@ -54,19 +74,62 @@ header {
   border-radius: 20px 20px;
   box-shadow: grey; }
 
+.btn {
+  top: 60%;
+  left: 50%;
+  color: blue;
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 20px 20px;
+  box-shadow: grey; }
+
+.btn__card {
+  color: hotpink; }
+
 .flex-card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
 
-.card-img {
+.card--img {
   height: 10rem;
   width: 10rem;
   clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%); }
 
-.card-p {
+.card--paragraph {
   width: 10rem; }
 
+/*  ::before, ::after ska ha ::
+     before , after lägger till content in i DOM med hjälp av css
+
+     content 
+
+
+
+ex: 
+     .card-p:hover::before {
+
+   content:"Hej , här är lite tips om mat rätten";
+   position: relative;
+   top:0px;
+   border:2px solid green;
+   left:10px;
+   color:red;
+}
+
+.card-p:hover::before {
+
+    content: " 🎧 här kommer en hörlur  " ;
+    position: relative;
+    top:0px;
+    border:2px solid green;
+    left:10px;
+    color:red;
+ }
+
+
+ 
+ */
 article {
   border: 2px solid gray;
   border-radius: 10px 10px;
@@ -89,7 +152,8 @@ li {
   display: inline;
   margin-right: 30px; }
 
-.card-img:hover {
+/* psuedu class har oxå 10p */
+.card--img:hover {
   /* animation: name duration timing-function delay iteration-count */
   animation: imageAnim 2s ease-in 1s infinite;
   /*  transform: scale(1.5, 1.5);  */

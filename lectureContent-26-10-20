@@ -1,0 +1,161 @@
+Vi ska gå genom: 
+           
+
+* Pseudo class :hover, :active, :visited
+
+         * Pseudo selector :   ::before, ::after
+                       
+                lägger till extra content in i DOM/html med hjälp av CSS
+               * Måste ha   content: egenskapen
+        
+
+Läs mer:
+https://css-tricks.com/almanac/selectors/a/after-and-before/
+https://freefrontend.com/css-before-after/
+
+https://dev.io
+https://medium.com 
+
+
+
+
+
+         * CSS inheritance: Alla egenskapar i css har en default/ computed value
+
+                           * om vi ger något värde ;
+                           * Om parent element har något värde ( computed värde)
+                                  obs: Bara vissa egenskaper ärvs från parent element 
+                           * Default värde
+
+Läs mer : https://www.sitepoint.com/css-inheritance-introduction/
+
+
+
+3 veckor css : 
+    scss,media-queries,layout 
+    responsive img 
+
+
+7 veckors javascript:
+    Grunder om programmering : loop, condition , function , var, datatypes 
+    datastructure och Algoritm : String hantering 
+    DOM modelling
+
+
+återkommer : 9:30 
+
+-----  ------   ------   -------
+
+           * CSS specificity
+
+tagname till ex . p, div, section , main , h1, header a, osv  : har 1p
+.classname till ex.   .card-p : har 10p
+#idname till ex.  #card-p: har 100p 
+
+p { color: red} //1p
+
+.card-p { color: green} //10p
+
+#card-p {color:pink}  // 100p
+
+ex: 
+
+
+ li.footer-nav-li > a {
+        text-decoration: none;
+        color:red;
+       
+    }
+    
+
+    .footer-nav-li > a {
+        text-decoration: none;
+        color:green;
+       
+    }
+
+
+hållbarhet/reusibility
+
+           * BEM : 
+
+Block : Standalone, kan återanvändas 
+
+Element :  en del av block och kan inte återanvändas. 
+
+Modifier: för att kunna Modifiera block 
+
+
+.block {
+
+}
+
+.block--element{
+
+
+}
+
+.block--element__modifier{
+
+}
+
+Läs mer: 
+
+https://css-tricks.com/bem-101/
+https://css-tricks.com/building-a-scalable-css-architecture-with-bem-and-utility-classes/
+
+
+--------   ---------   -------
+
+
+
+
+
+återkommer 10:30
+
+           
+* Responsive navbar:
+
+
+Entity reference: 
+https://dev.w3.org/html5/html-author/charref
+
+
+&#9776;  :  hamburger meny  
+
+
+
+
+   font-family, fina bilder , color combination 
+
+   animation
+
+
+
+återkommer 11:30. 
+
+  * SCSS/sass upprepning  : 
+
+
+ component based approach:  
+    
+    * för att kunna använda scss  {} / sass , behöver vi
+     :node js installerat 
+
+     behöver vi aktivera npm i projektet:  npm init -y
+
+
+
+       
+ 
+* responsive bilder, media queries , Scss 
+
+
+
+
+
+
+
+
+
+--

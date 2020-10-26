@@ -1,27 +1,71 @@
-nav{
+
+#toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+.navbar{
     padding: 1.25rem;
     background: $base-color;
     height: 2.5rem;   
 }
 
-.nav-li {
-    position: absolute;  
+.navbar--menu  {
+
+   display: flex;
+   justify-content:space-around ;
+   align-items: center;
 }
 
-.li-about {
-    left:80%;
+.navbar--menu >a {
 
+    text-decoration: none;
+    font-size: 20px;
+    
 }
 
-.li-contact{
-    left:85%;
-}
+@media (max-width:500px) {
 
-.li-blogg{
-    left:90%;
-}
+    .hamburger {
+        display: block;
+    }
 
-.li-home {
-   position: absolute;
-   left: 0;
+    .navbar--menu {
+        display: none;
+      
+       
+    }
+   
+
+    #toggle:checked  + .navbar--menu {
+     
+      display: block;
+      background-color: orange;
+      padding-bottom: 5px;
+
+    }
+
+    #toggle:checked  + .navbar--menu::before {
+        content:" 😺  🍔  ⚓  ";
+         display: block;
+         background-color: orange;
+         padding-bottom: 5px;
+   
+       }
+
+    .navbar--menu >a {
+
+       display: block;
+       color: wheat;
+       margin: 20px;
+       border-bottom: 1.5px solid black;
+
+        
+    }
+
+
 }
