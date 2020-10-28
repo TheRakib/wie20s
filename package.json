@@ -1,7 +1,6 @@
 {
   "name": "Wie20s",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node-sass sass/main.scss style.css -w"
@@ -19,5 +18,7 @@
   "homepage": "https://github.com/Rakibmedieinstitutet/wie20s#readme",
   "dependencies": {
     "node-sass": "^4.14.1"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }

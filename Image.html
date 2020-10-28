@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ <style>
+   
+   header{
+       height:20vh;
+       border:2px solid red;
+       background-image: url("bilder/Little-food.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+    
+   }
+
+   
+   @media (max-width: 500px) {
+       header{
+
+        background-image: url("bilder/headerPic.jpg");
+       }
+      
+   }
+
+
+ </style>
+
+
+
+</head>
+<body>
+    
+    <header>
+
+
+    </header>
+
+
+
+     <picture>
+        <source media="(min-width:1200px)" srcset="bilder/BigFood.jpg" >
+        <source media="(min-width:800px)" srcset="bilder/headerPic.jpg" >
+        <source media="(min-width:500px)" srcset="bilder/Slack.jpg" >
+      <!-- ifall den inte lyckas att rendera andra bilderna tar den img-->
+        <img src="bilder/Medium_food.jpg" alt="Food" style="width:auto;">
+     </picture>
+     
+
+
+
+
+
+
+
+
+</body>
+</html>

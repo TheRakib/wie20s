@@ -1,0 +1,79 @@
+
+
+* Responsive bilder: 
+
+   background url: css 
+        Responsive background bild: 
+              * background-position
+              * background-size 
+        Plus: 
+            Media-queries: små devices 
+      
+
+
+   img: html: 
+
+
+       * Picture >Source  : 
+            bild storlek olika till olika devices
+       * img :srcset
+  
+
+  
+ 
+
+
+
+ 
+
+
+
+
+* Flex fort. 
+        flex-basis / width på flex items 
+
+flex-shrink // om flex item får minska sin width
+
+flex-grow // Storleken jämför med andra items 
+
+
+align-items  // hur fungerar detta ifall man inte har nån specifik parent width 
+         baseline
+
+
+
+
+         Flex container/parent :  
+                          display:flex;
+                          flex-direction:column/row
+                          flex-wrap:wrap
+                          justify-content:center, space-around, ... 
+                          align-items:center, flex-start, flex-end , baseline 
+                          align-content: center;
+
+        
+         Flex-items/child: 
+                      
+                          flex-grow
+                          flex-shrink
+                          flex-basis
+                          order
+                          align-self 
+
+
+
+-----   -----  -----
+
+
+* Mobile first utveckling: 
+     
+      * mindre bildstorklek 
+      * Design anpassning till små device 320px
+
+- - -- -- --------- ------------------- 
+   
+
+* SCSS upprepning : hållbar
+ 
+* partial 
+* Import 
